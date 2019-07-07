@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IZf-OH-SsC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ElegantMediaHotelAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLU-ZJ-XpP">
+                                <rect key="frame" x="107.5" y="345.5" width="160" height="40"/>
+                                <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cdm-AS-4K5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Q0x-Ju-ep6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                <state key="normal" title="Facebook Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFacebookLoginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gId-Sp-Iit"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.31873394691780821" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NLU-ZJ-XpP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Pqp-k6-HxS"/>
+                            <constraint firstItem="NLU-ZJ-XpP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eTO-2a-2Cu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login View" id="OWV-Bd-V36"/>
+                    <connections>
+                        <segue destination="yrh-aj-fc8" kind="show" identifier="SegueToHotelList" id="tKW-GG-jl1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
+        </scene>
+        <!--List View-->
+        <scene sceneID="fTv-sn-dul">
+            <objects>
+                <viewController title="List View" id="yrh-aj-fc8" customClass="HotelListViewController" customModule="ElegantMediaHotelAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m4O-gN-FGd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j12-gp-zpV">
+                                <rect key="frame" x="10" y="74" width="355" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="useremail@test.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBr-10-7u0">
+                                <rect key="frame" x="10" y="97.5" width="355" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMM-Qw-3Oa">
+                                <rect key="frame" x="112.5" y="127" width="150" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="iYq-NV-14A"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="pqu-Ww-6Fj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogoutClicked:" destination="yrh-aj-fc8" eventType="touchUpInside" id="4qV-aS-HRZ"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rbl-AG-mse">
+                                <rect key="frame" x="0.0" y="171" width="375" height="496"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HotelTableViewCell" rowHeight="82" id="mN1-Qa-F00" customClass="HotelTableViewCell" customModule="ElegantMediaHotelAssignment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mN1-Qa-F00" id="7T9-Do-jNK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Thm-2X-oA6" customClass="RoundedUIImageView" customModule="ElegantMediaHotelAssignment" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="11" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="8bU-En-J0i"/>
+                                                        <constraint firstAttribute="height" constant="60" id="h2Q-FC-XoH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tia-sb-TNb">
+                                                    <rect key="frame" x="95" y="11" width="250" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXW-AC-3c2">
+                                                    <rect key="frame" x="95" y="55.5" width="250" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Tia-sb-TNb" firstAttribute="leading" secondItem="Thm-2X-oA6" secondAttribute="trailing" constant="15" id="3gH-lO-mQ4"/>
+                                                <constraint firstItem="Tia-sb-TNb" firstAttribute="top" secondItem="Thm-2X-oA6" secondAttribute="top" id="GFf-iS-L2C"/>
+                                                <constraint firstItem="IXW-AC-3c2" firstAttribute="bottom" secondItem="Thm-2X-oA6" secondAttribute="bottom" id="IaV-Cx-HVp"/>
+                                                <constraint firstItem="Thm-2X-oA6" firstAttribute="leading" secondItem="7T9-Do-jNK" secondAttribute="leadingMargin" constant="5" id="Qb9-6g-RxQ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Tia-sb-TNb" secondAttribute="trailing" constant="15" id="TfE-wy-zNP"/>
+                                                <constraint firstItem="Thm-2X-oA6" firstAttribute="centerY" secondItem="7T9-Do-jNK" secondAttribute="centerY" id="hVj-9F-4pM"/>
+                                                <constraint firstItem="IXW-AC-3c2" firstAttribute="leading" secondItem="Tia-sb-TNb" secondAttribute="leading" id="nO8-bP-RiH"/>
+                                                <constraint firstItem="IXW-AC-3c2" firstAttribute="trailing" secondItem="Tia-sb-TNb" secondAttribute="trailing" id="xZZ-4z-o6a"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgHotel" destination="Thm-2X-oA6" id="82f-ON-Znh"/>
+                                            <outlet property="lblAddress" destination="IXW-AC-3c2" id="Wba-OY-g3z"/>
+                                            <outlet property="lblHotelName" destination="Tia-sb-TNb" id="mvB-83-zWI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yrh-aj-fc8" id="DGX-lw-n95"/>
+                                    <outlet property="delegate" destination="yrh-aj-fc8" id="B8O-BA-QFW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UMM-Qw-3Oa" firstAttribute="top" secondItem="FBr-10-7u0" secondAttribute="bottom" constant="10" id="3L5-S0-g2K"/>
+                            <constraint firstItem="Tsg-us-tvd" firstAttribute="trailing" secondItem="Rbl-AG-mse" secondAttribute="trailing" id="3ty-Ns-Gii"/>
+                            <constraint firstItem="FBr-10-7u0" firstAttribute="top" secondItem="j12-gp-zpV" secondAttribute="bottom" id="6CC-gd-lRj"/>
+                            <constraint firstItem="UMM-Qw-3Oa" firstAttribute="centerX" secondItem="Tsg-us-tvd" secondAttribute="centerX" id="7kI-hK-60q"/>
+                            <constraint firstItem="FBr-10-7u0" firstAttribute="trailing" secondItem="j12-gp-zpV" secondAttribute="trailing" id="A6b-gl-p3N"/>
+                            <constraint firstItem="Tsg-us-tvd" firstAttribute="trailing" secondItem="j12-gp-zpV" secondAttribute="trailing" constant="10" id="EBe-yS-IWo"/>
+                            <constraint firstItem="j12-gp-zpV" firstAttribute="leading" secondItem="Tsg-us-tvd" secondAttribute="leading" constant="10" id="H6Z-70-8V2"/>
+                            <constraint firstItem="Rbl-AG-mse" firstAttribute="leading" secondItem="Tsg-us-tvd" secondAttribute="leading" id="HoB-Nq-VCo"/>
+                            <constraint firstItem="FBr-10-7u0" firstAttribute="leading" secondItem="j12-gp-zpV" secondAttribute="leading" id="MZo-5Q-6C2"/>
+                            <constraint firstItem="Rbl-AG-mse" firstAttribute="top" secondItem="UMM-Qw-3Oa" secondAttribute="bottom" constant="10" id="UGP-Ba-8Iv"/>
+                            <constraint firstAttribute="bottom" secondItem="Rbl-AG-mse" secondAttribute="bottom" id="lbN-lM-6zA"/>
+                            <constraint firstItem="j12-gp-zpV" firstAttribute="top" secondItem="Tsg-us-tvd" secondAttribute="top" constant="10" id="pKc-Fb-Vbu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tsg-us-tvd"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblEmailAddress" destination="FBr-10-7u0" id="T0a-FL-bxX"/>
+                        <outlet property="lblUserName" destination="j12-gp-zpV" id="SlM-LX-hiy"/>
+                        <outlet property="tblHotelList" destination="Rbl-AG-mse" id="ja0-7v-cVv"/>
+                        <segue destination="WMN-j7-T2U" kind="show" identifier="SegueHotelListToDetails" id="QqW-g8-9nb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UzS-zq-yy4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="133.5832083958021"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="FYa-dR-oql">
+            <objects>
+                <viewController title="Details" id="WMN-j7-T2U" customClass="HotelDetailsViewController" customModule="ElegantMediaHotelAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xiX-Gk-cGq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jGr-JP-HWF">
+                                <rect key="frame" x="122.5" y="69" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Ls8-ln-0ly"/>
+                                    <constraint firstAttribute="height" constant="130" id="d1z-c0-IvG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel Long Long Name " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7To-qq-JxU">
+                                <rect key="frame" x="10" y="209" width="355" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cpZ-kl-ylj">
+                                <rect key="frame" x="10" y="242.5" width="355" height="414.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cpZ-kl-ylj" firstAttribute="top" secondItem="7To-qq-JxU" secondAttribute="bottom" constant="10" id="Lhb-XV-qeT"/>
+                            <constraint firstItem="jGr-JP-HWF" firstAttribute="top" secondItem="Rje-Sz-dpc" secondAttribute="top" constant="5" id="QSA-f6-WNw"/>
+                            <constraint firstItem="7To-qq-JxU" firstAttribute="top" secondItem="jGr-JP-HWF" secondAttribute="bottom" constant="10" id="QUu-EP-vf3"/>
+                            <constraint firstItem="Rje-Sz-dpc" firstAttribute="trailing" secondItem="7To-qq-JxU" secondAttribute="trailing" constant="10" id="T2C-s9-9DH"/>
+                            <constraint firstItem="Rje-Sz-dpc" firstAttribute="bottom" secondItem="cpZ-kl-ylj" secondAttribute="bottom" constant="10" id="YWZ-ct-TzT"/>
+                            <constraint firstItem="cpZ-kl-ylj" firstAttribute="trailing" secondItem="7To-qq-JxU" secondAttribute="trailing" id="cAE-xc-Tc0"/>
+                            <constraint firstItem="jGr-JP-HWF" firstAttribute="centerX" secondItem="Rje-Sz-dpc" secondAttribute="centerX" id="lfY-NS-rsv"/>
+                            <constraint firstItem="7To-qq-JxU" firstAttribute="leading" secondItem="Rje-Sz-dpc" secondAttribute="leading" constant="10" id="qxA-pK-5KK"/>
+                            <constraint firstItem="cpZ-kl-ylj" firstAttribute="leading" secondItem="7To-qq-JxU" secondAttribute="leading" id="yQT-He-2Sl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rje-Sz-dpc"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgHotel" destination="jGr-JP-HWF" id="Xmk-Sw-La3"/>
+                        <outlet property="lblHotelName" destination="7To-qq-JxU" id="ZWH-1Y-vbk"/>
+                        <outlet property="txtViewDescription" destination="cpZ-kl-ylj" id="SQb-2S-19C"/>
+                        <segue destination="ZKV-Ad-DT7" kind="show" identifier="SegueDetailsToMap" id="XRZ-9T-sPX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tpW-70-sbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="133.5832083958021"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="bxN-PN-WAj">
+            <objects>
+                <viewController title="Map" id="ZKV-Ad-DT7" customClass="MapViewController" customModule="ElegantMediaHotelAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oex-95-Auf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-A4-pzY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZKV-Ad-DT7" id="a5H-SP-AcA"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q9S-A4-pzY" firstAttribute="top" secondItem="EMK-hh-cG5" secondAttribute="top" id="7UW-Cz-YVc"/>
+                            <constraint firstItem="EMK-hh-cG5" firstAttribute="trailing" secondItem="q9S-A4-pzY" secondAttribute="trailing" id="9ka-IG-ZS4"/>
+                            <constraint firstItem="q9S-A4-pzY" firstAttribute="leading" secondItem="EMK-hh-cG5" secondAttribute="leading" id="BjW-JN-9yG"/>
+                            <constraint firstAttribute="bottom" secondItem="q9S-A4-pzY" secondAttribute="bottom" id="aGf-Cw-Qb1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EMK-hh-cG5"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="q9S-A4-pzY" id="Skh-po-azI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xuc-fA-u1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3254" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3cf-V9-93D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IZf-OH-SsC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="EWR-FZ-0mz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SJb-oc-rjB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Rc-pl-8s4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="135"/>
+        </scene>
+    </scenes>
+</document>
